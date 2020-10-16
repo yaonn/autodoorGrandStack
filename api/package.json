@@ -22,6 +22,7 @@
     "neo4j-driver": "^4.0.2",
     "neo4j-graphql-js": "^2.14.2",
     "node-fetch": "^2.6.0",
+    "qrcode": "^1.4.4",
     "react": "^16.13.1"
   },
   "devDependencies": {

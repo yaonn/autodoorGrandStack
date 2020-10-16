@@ -30,6 +30,12 @@ if (templateName === 'Flutter') {
   })
 }
 
+jobs.push({
+  name: 'rpi',
+  command: `cd rpi-react && npm start`,
+  prefixColor: 'yellow',
+})
+
 concurrently(jobs, concurrentOpts).catch((e) => {
   console.error(e.message)
 })
