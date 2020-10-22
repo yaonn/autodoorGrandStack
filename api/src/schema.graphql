@@ -1,5 +1,11 @@
 type Query {
   qrcode: String @neo4j_ignore
+  userCount: Int
+    @cypher(
+      statement: """
+      MATCH (p:Person) RETURN count(p)
+      """
+    )
 }
 
 extend type Person {
